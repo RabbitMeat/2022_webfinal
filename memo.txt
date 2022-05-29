@@ -1,0 +1,48 @@
+【目前進度】
+5/29
+大致上框架
+目前server跟client的內容是複製別人網頁的，還沒動過
+之後要改成server每秒回傳、client的hook感測到數字改變就回傳
+port也還沒改掉
+
+
+【框架說明】
+→Server端
+server.js：負責資料接收和傳送
+GameManager
+    PlayerManager.js等負責收json的資料進行判斷（目前是打算同個資料夾分開js檔，寫一起也可以）
+data
+    server_data.json存放資料
+
+→Client端
+public：目前沒有動
+src
+    index.js：最後傳給index.html的部分
+    css：如果需要的話可以開css存語法
+    data：
+        client_data.json存放資料
+    components
+        App.js：主頁，負責判斷現在要render的頁面
+        client_socket.js：負責接收和傳送
+
+	XXX_asset資料夾：每個頁面的資料夾
+            Page_XXX.js：主畫面，負責render出所有元件
+            其他.js：負責每個render部分
+
+
+【socket.io測試】
+開兩個terminal
+去client打開網頁
+再去打開server
+
+
+【參考連結】
+在react中套用Socket.io
+https://ms314006.github.io/use-websocket-by-react-socket-io/
+
+react和p5.js的結合範例
+https://www.codegrepper.com/code-examples/javascript/p5.js+with+react
+
+https://qiita.com/shunp/items/05fe060fa37ae6f4b217
+https://github.com/nphsu/p5_react
+（這篇是日文但解釋比較多而且有附上github）
