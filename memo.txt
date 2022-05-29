@@ -1,9 +1,9 @@
 【目前進度】
 5/29
-大致上框架
-目前server跟client的內容是複製別人網頁的，還沒動過
-之後要改成server每秒回傳、client的hook感測到數字改變就回傳
-port也還沒改掉
+大致框架初版完成
+目前server跟client的內容是複製別人網頁測試的，只有基礎的對傳，port還沒改
+目標是server每秒回傳、client的hook感測到數字改變就回傳
+之後socket跟吃資料的部分會稍微調整
 
 
 【框架說明】
